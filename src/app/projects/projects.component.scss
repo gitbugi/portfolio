@@ -1,0 +1,109 @@
+.body {
+    height: fit-content;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: #f5f8fd;
+
+    p {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .projectlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            height: fit-content;
+            margin: 10px 0;
+            padding: 0 40px;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.45);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(9.5px);
+                -webkit-backdrop-filter: blur(9.5px);
+                border-radius: 10px;
+            }
+
+            img {
+                height: 300px;
+                width: 400px;
+                margin: 20px 0;
+            }
+
+            p {
+                text-align: center;
+                padding: 0 10px;
+                width: 400px;
+                height: 100px;
+            }
+
+            a {
+                margin-bottom: 20px;
+            }
+
+            .tags {
+                display: flex;
+                flex-direction: row;
+                margin: 20px 0;
+                font-size: 13px;
+                .tag {
+                    height: fit-content;
+                    width: fit-content;
+                    background-color: #d8dde6;
+                    border-top-left-radius: 42px;
+                    border-top-right-radius: 42px;
+                    border-bottom-left-radius: 42px;
+                    border-bottom-right-radius: 42px;
+                    padding: 5px 5px;
+                    margin: 0 5px;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .body {
+        width: calc(100vw - 300px);
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .body {
+        .projectlist {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            justify-items: center;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1800px) {
+    .body {
+        .projectlist {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            justify-items: center;
+        }
+    }
+}
+

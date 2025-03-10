@@ -1,0 +1,116 @@
+.btn-hamburger {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    color: antiquewhite;
+    background-color: #7151A1;
+
+    .menu {
+        text-align: center;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .close {
+        display: none;
+    }
+}
+
+.body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 150px;
+
+    p {
+        font-size: 25px;
+        margin: 0;
+        margin-left: 10px;
+        width: fit-content;
+
+        &:nth-child(3) {
+            font-size: 10px;
+            color: #FFA726;
+        }
+    }
+
+    .angular-pic {
+        background-image: url('../../../public/assets/angularSignals.png');
+        height: 400px;
+        width: 100vw;
+        background-position: right 0px top 0px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: myAnim 10s ease 0s 1 normal forwards;
+        animation-iteration-count: infinite;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .btn-hamburger {
+        display: none;
+    }
+
+    .body {
+        width: calc(100vw - 300px);
+        margin-left: 300px;
+
+        p {
+            font-size: 40px;
+            margin-left: 20px;
+        }
+
+        .angular-pic {
+            width: calc(100vw - 300px);
+            height: 500px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .angular-pic {
+            position: absolute;
+            height: 800px;
+            width: 800px;
+            top: 100px;
+            right: 20px;
+        }
+    }
+
+}
+
+@keyframes myAnim {
+
+    0%,
+    2%,
+    4% {
+        opacity: 1;
+    }
+
+    1%,
+    3%,
+    5% {
+        opacity: 0;
+    }
+
+    10%,
+    100% {
+        opacity: 1;
+    }
+
+}

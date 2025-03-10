@@ -1,0 +1,15 @@
+<div class="btn-hamburger" (click)="toggleHamburgerBtn()">
+    <span class="material-symbols-outlined menu" #menu [style.display]="this.logik.hamburgerBtn ? 'block' : 'none'">Menu</span>
+    <span class="material-symbols-outlined close" #close [style.display]="this.logik.hamburgerBtn ? 'none' : 'block'">Close</span>
+</div>
+
+<div class="body">
+    <div class="angular-pic"></div>
+    <div class="txt">
+        <p>Hallo Mein Name ist Bugrahan</p>
+        <p>Ich bin ein 
+        <ngx-typed-writer [strings]="['Anwendungsentwickler', 'Web Developer', 'Software Developer']" [cursorChar]="'|'" [showCursor]="true" [backSpeed]="50" [typeSpeed]="50"> </ngx-typed-writer>
+        </p>
+        <p>Die Webseite habe ich mit Angular entwickelt</p>
+    </div>
+</div>

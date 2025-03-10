@@ -1,0 +1,35 @@
+.body {
+    height: fit-content;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 60px;
+    padding: 20px 20px;
+
+    .data {
+        margin: 20px 0;
+        font-size: 18px;
+        .date {
+            font-weight: 900;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: underline;
+            margin: 35px 0;
+        }
+        .txt {
+            padding-left: 30px;
+            h3, p {
+                margin: 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .body {
+        width: calc(100vw - 300px);
+        margin-left: 300px;
+    }
+}

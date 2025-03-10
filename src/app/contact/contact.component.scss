@@ -1,0 +1,17 @@
+.body {
+    width: 100vw;
+    height: 300px;
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .body {
+        width: calc(100vw - 300px);
+        margin-left: 300px;
+    }
+}
