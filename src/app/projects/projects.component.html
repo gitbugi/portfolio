@@ -3,26 +3,42 @@
     <p>Bei den Projekten handelt es sich um private Projekte</p>
     <div class="projectlist">
         <div class="project" data-aos="zoom-in-down">
-            <img src="assets/Projects/ErsteWebsite.png" alt="Erste Webseite">
-            <hr>
-            <h3>Meine Erste Webseite</h3>
-            <p>Das war ganz am Anfang, wo ich HTML, CSS, JS & JQuery neu gelernt hatte.</p>
-            <div class="tags">
-                <div class="tag">#HTML</div>
-                <div class="tag">#CSS</div>
-                <div class="tag">#Javascript</div>
-                <div class="tag">#JQuery</div>
-            </div>
-            <a href="https://gitbugi.github.io/Meine-Webseite/" target="_blank">Link zur Webseite</a>
-            <a href="https://github.com/gitbugi/Meine-Webseite" target="_blank">Link zum Code</a>
-        </div>
-        <div class="project" data-aos="zoom-in-down">
             <img src="assets/Projects/covid.png" alt="covid">
             <hr>
             <h3>Corona Tracking Seite</h3>
-            <p>Das war ein Projekt was ich zuzeit von Corona entwicklet habe mit Angular.</p>
             <div class="tags">
                 <div class="tag">#Angular</div>
+            </div>
+            <div class="blog">
+                <h2>Vorstellung meines Corona-Dashboard-Projekts</h2>
+                <p>In diesem Blogartikel möchte ich euch mein privates Projekt vorstellen – eine Coronawebseite, die aktuelle Coronastatistiken auf übersichtliche Weise darstellt. Dabei habe ich modernste Webtechnologien und fortschrittliche Entwicklungskonzepte kombiniert, um ein performantes und multilingual einsetzbares Dashboard zu realisieren. Im Folgenden teile ich einige Einblicke in die Entwicklung und die technischen Details der Anwendung.</p>
+                <h3>Projektüberblick</h3>
+                <p>Die Coronawebseite wurde als persönliches Projekt entwickelt, um öffentlich verfügbare Corona-Statistiken ansprechend und informativ aufzubereiten. Ursprünglich habe ich dazu eine öffentliche API verwendet, die wichtige Daten wie Infektionszahlen, Genesungen und andere relevante Statistiken bereitstellt. Um die Daten ansprechend darzustellen, setze ich auf interaktive Diagramme und klare visuelle Elemente, die den Benutzern einen schnellen Überblick ermöglichen.</p>
+                <h3>Technologische Umsetzung</h3>
+                <h4>Framework und Programmiersprache</h4>
+                <p>Die Anwendung wurde vollständig in Angular unter Verwendung von TypeScript realisiert. Angular bietet durch seine modulare Struktur und starke Typisierung die perfekte Umgebung, um komplexe Webanwendungen zu entwickeln. Zu den wesentlichen Angular-Features zählen:
+
+                    Interpolation: Zur dynamischen Einbindung von Daten in HTML-Templates.
+                    
+                    &#64;Input und &#64;Output: Ermöglichen eine effiziente Kommunikation zwischen den Komponenten.
+                    
+                    Services: Zum zentralen Abrufen und Verwalten von Daten, was zu einer sauberen Trennung der Logik beiträgt.</p>
+                <h4>Datenabruf und -verarbeitung</h4>
+                <p>Die öffentlichen API-Anfragen zur Abfrage der Coronavirus-Daten habe ich elegant mit Hilfe von Observables umgesetzt. Diese asynchrone Programmiertechnik ermöglicht es, Datenströme zu verwalten und flexibel auf Aktualisierungen zu reagieren. Allerdings musste ich feststellen, dass die ursprüngliche API mittlerweile veraltet und sehr langsam geworden ist. Die API wird zudem nicht mehr regelmäßig aktualisiert.
+
+                    Um diese Herausforderungen zu meistern und die Benutzererfahrung zu optimieren, habe ich die Daten in einer internen JSON-Datei zwischengespeichert. Dieser Ansatz hat nicht nur die Performance erheblich gesteigert, sondern auch die Stabilität der Anwendung verbessert.</p>
+                <h4>Darstellung der Statistiken</h4>
+                <p>Für die visuelle Darstellung der Statistiken verwende ich Chart.js. Dieses mächtige JavaScript-Charting-Framework erlaubt es, ansprechende und interaktive Diagramme zu erstellen, die die Daten anschaulich visualisieren. Die Nutzer erhalten so einen schnellen Überblick über die dynamische Entwicklung der Zahlen, unterstützt durch klare Grafiken und Animationen.</p>
+                <h4>Internationale Unterstützung</h4>
+                <p>Eine Besonderheit der Anwendung ist die Unterstützung mehrerer Sprachen. Mithilfe einer i18n Library ist die Coronawebseite in Deutsch, Türkisch und Englisch verfügbar. Dies ermöglicht es, ein breiteres Publikum anzusprechen und die Informationen in der bevorzugten Sprache der Benutzer darzustellen.</p>
+                <h4>Flaggen als visuelles Element</h4>
+                <p>Um den internationalen Ansatz der Webseite zu unterstreichen und die Herkunft der Daten visuell zu markieren, habe ich Flaggen als SVG-Grafiken von flagcdn.com eingebunden. Diese hochwertigen Flaggen-Icons ergänzen das Design und verbessern die Benutzerfreundlichkeit, insbesondere beim Umschalten zwischen den verschiedenen Sprachversionen.</p>
+
+                <h3>Fazit</h3>
+                <p>Die Entwicklung des Corona-Dashboards war ein spannendes und lehrreiches Projekt, das mir ermöglichte, verschiedene moderne Webtechnologien und -konzepte in der Praxis zu erproben. Vom Einsatz von Angular und TypeScript über die Implementierung von Observables bis hin zur Einbindung von Chart.js und internationalen Sprachoptionen – jedes Feature hat dazu beigetragen, ein ansprechendes und benutzerfreundliches Dashboard zu schaffen.
+
+                    Obwohl die ursprüngliche API nicht mehr den Anforderungen entspricht und auf Performanceprobleme gestoßen ist, konnte ich durch das Zwischenspeichern in einer internen JSON-Datei signifikante Verbesserungen erzielen.</p>
+
             </div>
             <a href="https://gitbugi.github.io/covid/" target="_blank">Link zur Webseite</a>
             <a href="https://github.com/gitbugi/covid" target="_blank">Link zum Code</a>
@@ -31,25 +47,48 @@
             <img src="assets/Projects/Moderna.png" alt="Moderna">
             <hr>
             <h3>Moderna Seite</h3>
-            <p>Diese Webseite ist schon vorhanden. Ich habe es als Übung komplett mit Angular nachgebaut(ohne auf den Ursprunglichen code zu gucken)</p>
             <div class="tags">
                 <div class="tag">#Angular</div>
+            </div>
+            <div class="blog">
+                <h2>Mein persönliches Übungsprojekt: Die Nachbau-Webseite der Corporate Moderna Vorlage</h2>
+                <p>In diesem Blogartikel stelle ich mein neuestes Übungsprojekt vor – den Nachbau einer bekannten Corporate-Webseite, basierend auf der Vorlage von BootstrapMade. Dieses Projekt ermöglichte es mir, meine Frontend-Entwicklungskompetenzen zu schärfen und innovative Angular-Techniken auszuprobieren, ohne den Ursprungscode direkt zu konsultieren.</p>
+                <h3>Projektidee und Zielsetzung</h3>
+                <p>Die Grundidee war simpel: Eine existierende Webseite als Vorlage zu nehmen und sie im Rahmen eines Übungsprojekts selbstständig nachzubauen. Dabei habe ich bewusst nicht auf den ursprünglichen Code geschaut, sondern die Seite eigenständig rekonstruiert. Dies half mir, meine Fähigkeiten in den folgenden Bereichen zu verbessern:
+
+                    Responsive Design: Die Seite passt sich unterschiedlichen Bildschirmgrößen an, sodass sie auf mobilen Geräten genauso gut aussieht wie auf Desktop-Computern.
+                    
+                    Clean Code und Modularität: Ein sauberes und nachvollziehbares Frontend wurde in Angular entwickelt, was für zukünftige Erweiterungen und Wartungen von Vorteil ist.</p>
+                <h3>Technische Umsetzung</h3>
+                <h4>Framework und Frontend-Architektur</h4>
+                <p>Das gesamte Projekt wurde ausschließlich mit Angular umgesetzt, ohne Backend-Anbindung oder Verwendung einer Datenbank. Dies ermöglichte mir den Fokus auf moderne Frontend-Techniken und eine saubere Codebasis.
+
+                    Routing: Mithilfe von Angular Routes habe ich eine klare Navigation innerhalb der Anwendung etabliert, die es Benutzern erlaubt, zwischen den unterschiedlichen Seiteninhalten nahtlos zu wechseln.
+                    
+                    Forms mit clientseitiger Validierung: Formulare sind ein wesentlicher Bestandteil der Benutzerinteraktion. Durch den Einsatz von Angular Forms und der Implementierung von Validierungen direkt im Browser konnte ich ein benutzerfreundliches und robustes Formularsystem schaffen.
+                    
+                    ViewChild: Um dynamisch mit HTML-Elementen im TypeScript-Code zu interagieren, habe ich Angulars ViewChild-Decorator genutzt. So war es möglich, bestimmte Elemente direkt anzusprechen und zu manipulieren, was zu einer besseren Steuerung des DOM führte.</p>
+                <h4>Externe Libraries und weitere Features</h4>
+                <p>Für zusätzliche Funktionalität und ein ansprechendes Design habe ich externe Libraries integriert:
+
+                    Muri: Diese Library nutze ich zur Darstellung und Filterung von Bildern. Muri ermöglichte es, Bilder auf der Seite ansprechend zu präsentieren und interaktiv zu durchsuchen.
+                    
+                    </p>
+                <h3>Lernerfahrungen und Herausforderungen</h3>
+                <p>Das Projekt war eine spannende Herausforderung, da ich versuchte, die Seite komplett eigenständig zu rekonstruieren – ohne den Hilfeinhalt des ursprünglichen Codes. Dabei habe ich:
+
+                    Meine Fähigkeiten im responsiven Design erweitert: Ich habe gelernt, wie man flexible Layouts erstellt, die sich an unterschiedliche Geräte anpassen.
+                    
+                    Mein Verständnis für Angular vertieft: Die Verwendung von Routes, Forms und ViewChild in realen Anwendungen hat mein technisches Know-how deutlich verbessert.
+                    
+                    Die Vorteile von External Libraries erkannt: Tools wie Muri haben gezeigt, wie sich vorhandene Lösungen nahtlos in eigene Projekte integrieren lassen, um zusätzliche Features zu bieten.
+                    
+                    Diese Erfahrungen sind wertvoll und haben mich in meiner Entwicklung als Web-Developer weitergebracht.</p>
+                <h3>Fazit</h3>
+                <p>Das Nachbau-Projekt der Corporate Moderna Vorlage war eine ausgezeichnete Übung, um die eigenen Fähigkeiten im Frontend-Bereich zu testen und zu erweitern. Ohne auf den originalen Code zurückzugreifen, konnte ich die Prinzipien von Responsive Design, modularer Angular-Entwicklung und der Integration externer Libraries intensiv erproben. Obwohl es mittlerweile kleine Änderungen gegenüber meiner ursprünglichen Version gibt, bleibt dieses Projekt ein wichtiger Meilenstein in meinem Portfolio.</p>
             </div>
             <a href="https://gitbugi.github.io/moderna/" target="_blank">Link zur Webseite</a>
             <a href="https://github.com/gitbugi/moderna" target="_blank">Link zum Code</a>
-        </div>
-        <div class="project" data-aos="zoom-in-down">
-            <img src="assets/Projects/Notizen.png" alt="Notizen">
-            <hr>
-            <h3>Notizen als Hybrid-App</h3>
-            <p>Mit Ionic habe ich ein Web-App erstellt um Notizen für mich zu erstellen und zu Gruppieren. Die Anwendung habe ich dann mit Capacitor & Android Studio in ein Android App umgewandelt</p>
-            <div class="tags">
-                <div class="tag">#Angular</div>
-                <div class="tag">#Ionic</div>
-                <div class="tag">#Capacitor</div>
-                <div class="tag">#Android Studio</div>
-            </div>
-            <a href="https://github.com/gitbugi/notizen" target="_blank">Link zum Code</a>
         </div>
     </div>
 </div>

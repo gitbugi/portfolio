@@ -59,6 +59,10 @@
             </svg>
         </a>
 
+        <button (click)="themeService.toggleTheme()" class="darkLightBtn">
+            {{ themeService.isDarkMode ? '☀️' : '🌙' }}
+        </button>
+
     </div>
     <div style="margin-top: 30px;">Copyright © 2025</div>
 </div>
